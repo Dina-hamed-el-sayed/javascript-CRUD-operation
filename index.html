@@ -24,15 +24,20 @@
         <i class="fa-regular fa-bookmark  fs-4  mark2"></i>
     
        </div>
+       <div class="my-3 w-25 mx-auto  input-content">
+  
+        <input  oninput="searchItem()"  type="search" class="form-control" id="searchInput" placeholder="search" required>
+    </div>
+
     <div class="mb-3 w-100 input-content">
         <label for="bookName" class="form-label  fw-bold"> <i class="fa-solid fa-book-bookmark fw-bold"></i> site Name </label>
-        <input type="text" class="form-control" id="bookName" placeholder="bookmark name">
+        <input    type="text" class="form-control" id="bookName" placeholder="bookmark name" required>
     </div>
     <div class="mb-3 w-100 input-content">
         <label for="siteUrl" class="form-label fw-bold"><i class="fa-solid fa-link fw-bold"></i> site Url </label>
-        <input type="text" class="form-control" id="siteUrl" placeholder="website url">
+        <input  type="email" class="form-control" id="siteUrl" placeholder="website url" required >
     </div>
-    <button onclick="" class="btn px-4" type="submit"> submit</button>
+    <button onclick="addBook()" class="btn px-4" type="submit"> submit</button>
 </div>
 <table class="table  ">
     <thead   class="   text-center     "   >
@@ -43,8 +48,8 @@
         <th scope="col">Delete</th>
       </tr>
     </thead>
-    <tbody>
-      
+    <tbody id="tablaData">
+        
         
     </tbody>
   </table>
